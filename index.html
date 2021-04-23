@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write Upside Down</title>
+</head>
+<body>
+    <style>
+        h1{
+            color: white;
+            text-align: center;
+        }
+        body{
+            background: rgb(41, 41, 41);
+        }
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
+    <script src="jquery-3.6.0.js"></script>
+    <script src="js.js"></script>
+    <h1 class="hidden" id="orignal">type to start...</h1>
+    <h1 id="result" class="center" >type to start...</h1>
+    <input class="center" id="edittext" type="text"><br>
+    <button id="preview" class="center">preview</button><br>
+    <button id="copy" class="center">copy</button><br>
+</body>
+</html>
