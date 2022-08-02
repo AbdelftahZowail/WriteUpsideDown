@@ -26,11 +26,11 @@
 <body>
     <style>
         h1{
-            color: white;
+            color: rgb(255, 255, 0);
             text-align: center;
         }
         body{
-            background: rgb(0, 47, 150);
+            background: rgb(100, 100, 100);
         }
         .center{
             display: block;
@@ -40,15 +40,33 @@
         .hidden{
             display: none;
         }
+        .img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+            height: 30%;
+        }
+        .butn{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 5px;
+            color: rgb(255, 255, 43);
+            background-color: rgb(66, 132, 88);
+            width: 3cm;
+            height: 1cm;
+        }
     </style>
     <script src="jquery-3.6.0.js"></script>
     <script src="js.js"></script>
+    <img src = "logo_white.svg" class="img" alt="logo"/>
     <h1 class="hidden" id="orignal">type to start...</h1>
     <h1 id="result" class="center" >type to start...</h1>
     <input class="center" id="edittext" type="text"><br>
-    <button id="preview" class="center">preview</button><br>
-    <button onclick="location.href='/WriteUpsideDown/nexxt'" id="next_page" class="center">next</button><br>
-    <button id="copy" class="center" type="button">
-        copy</button><br>
+    <button class="butn"id="preview" >preview</button>
+    <button onclick="location.href='/WriteUpsideDown/nexxt'" class="butn"id="next_page">next</button>
+    <button class="butn"id="copy" type="button">
+        copy</button>
 </body>
 </html>
