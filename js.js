@@ -13,7 +13,7 @@ window.onload = function(){
     convert(edit.value);
   });
   copy.addEventListener('click',function(){
-    copyTextToClipboard('pǝןןoɹ ʞɔıɹ ʇsnɾ noʎ');
+    copyTextToClipboard(result.innerHTML);
   });    function fallbackCopyTextToClipboard(text) {
     var textArea = document.createElement("textarea");
     textArea.value = text;
