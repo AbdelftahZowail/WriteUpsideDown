@@ -57,6 +57,41 @@
             width: 3cm;
             height: 1cm;
         }
+        button {
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 0px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
     </style>
     <script src="jquery-3.6.0.js"></script>
     <script src="js.js"></script>
